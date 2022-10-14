@@ -1,4 +1,4 @@
-package introducao;
+package estruturadedados.introducao;
 
 public class EstruturaDados {
 
