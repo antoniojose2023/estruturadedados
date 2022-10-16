@@ -18,7 +18,7 @@ public class Main {
 //        System.out.println(fila.first());
 
         //Imprimir e remover primeiro da fila
-        No no = fila.dequeue();
+        Object no = fila.dequeue();
         System.out.println(fila);
         System.out.println(no);
 

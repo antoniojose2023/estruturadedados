@@ -7,16 +7,17 @@ public class Fila {
          this.refProximoNo = null;
     }
 
-    public void enqueue(No novoNo){
-            novoNo.setRefProximoNo(this.refProximoNo);
-            this.refProximoNo = novoNo;
+    public void enqueue(Object object){
+            No _novoNo = new No(object);
+            _novoNo.setRefProximoNo(this.refProximoNo);
+            this.refProximoNo = _novoNo;
     }
 
     public Boolean isEmpety(){
         return this.refProximoNo == null ? true : false;
     }
 
-    public No dequeue(){
+    public Object dequeue(){
         if(!isEmpety()){
             No primeiroNo = this.refProximoNo;
             No auxiliar = this.refProximoNo;
@@ -31,7 +32,7 @@ public class Fila {
                 }
             }
 
-            return primeiroNo;
+            return primeiroNo.getObject();
 
         }else{
             return null;
@@ -40,7 +41,7 @@ public class Fila {
     }
 
 
-     public No first(){
+     public Object first(){
           if(!isEmpety()){
               No primeiroNo = refProximoNo;
 
@@ -51,7 +52,7 @@ public class Fila {
                       break;
                   }
               }
-              return primeiroNo;
+              return primeiroNo.getObject();
           }else{
                 return null;
           }
