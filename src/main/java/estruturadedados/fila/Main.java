@@ -5,11 +5,11 @@ public class Main {
 
         Fila fila = new Fila();
 
-        fila.enqueue(new No("1"));
-        fila.enqueue(new No("2"));
-        fila.enqueue(new No("3"));
-        fila.enqueue(new No("4"));
-        fila.enqueue(new No("5"));
+        fila.enqueue("1");
+        fila.enqueue("2");
+        fila.enqueue("3");
+        fila.enqueue("4");
+        fila.enqueue("5");
 
 //        //Imprimindo fila completa
 //        System.out.println(fila);
