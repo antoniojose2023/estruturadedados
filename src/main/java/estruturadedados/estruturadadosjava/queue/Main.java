@@ -19,7 +19,5 @@ public class Main {
 
         queue.remove();
         System.out.println(queue);
-
-
     }
 }
